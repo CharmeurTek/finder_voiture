@@ -1,0 +1,72 @@
+<style>
+/* Footer */
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+/* End Of Footer */
+/* Search bar */
+  .bootstrap-tagsinput {
+   width: 100%;
+  }
+/* End of search bar */
+/* Helper */
+.help .popuptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+    margin-left: -160px;
+}
+/* Display Pop Up */
+.help .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.help .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.help {
+	  position: fixed;
+	  float: left;
+	  bottom: 83%;
+	  left: 95%;
+    	display: inline-block;
+    	-webkit-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none;
+}
+  /*End of Helper*/
+</style>
